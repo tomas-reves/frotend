@@ -151,7 +151,7 @@
             </div>
             <div class="col-md-6">
 
-              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+              <form class="mb-5" method="post" id="contactForm" name="contactForm" onsubmit="return validateForm()">
                 <div class="row">
                   <div class="col-md-12 form-group">
                     <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
@@ -197,13 +197,5 @@
     <script src="js/main.js"></script>
     </section><!-- End Contact Section -->
 
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navLinks = document.querySelector('.nav-links')
-
-        menuBtn.addEventListener('click', ()=>{navLinks.classList.toggle('mobile-menu')
-
-        })
-    </script>
 </body>
 </html>
